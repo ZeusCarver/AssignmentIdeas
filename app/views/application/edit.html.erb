@@ -1,0 +1,8 @@
+It edits
+
+<form name="Edit ideas" action="/update_idea/<%=@idea.id%>">
+  Name<input type="text" name="name" placeholder="Enter your name" value="<%=@idea.name%>">
+  Idea<textarea name="idea" placeholder="Type your idea here"> <%=@idea.idea%> </textarea>
+  Tags<input type="text" name="tag" value="<%=@idea.tag%>">
+  <input type="submit" value="Update in ThoughtBank">
+</form>

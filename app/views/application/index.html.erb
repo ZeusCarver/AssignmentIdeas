@@ -1,0 +1,15 @@
+It shows ALL the ideas
+
+<%@ideas.each do |idea|%>
+
+<p><%=idea.name%></p> 
+<p><%=idea.idea%></p>
+<p><%=idea.tag%></p>
+<span> <form action="/ideas/<%=idea.id%>/edit">
+<button name="subject" type="submit"> Edit? Click Here</button>
+  </form> </span>
+<span> <form action="/ideas/<%=idea.id%>/destroy">
+<button name="subject" type="submit"> Destroy? Click Here</button>
+  </form> </span>
+
+<%end%>
